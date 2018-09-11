@@ -1,1 +1,1 @@
-# scriptex.github.io
+# scriptex.js.org
