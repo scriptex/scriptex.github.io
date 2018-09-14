@@ -1,1 +1,1 @@
-# scriptex.js.org
+# [scriptex.js.org](https://scriptex.js.org)
