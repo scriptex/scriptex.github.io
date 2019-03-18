@@ -8,3 +8,4 @@ My Github Pages hosted website with custom `js.org` domain name.
 2. [`AnimateMe`](https://scriptex.js.org/AnimateMe/)
 3. [`localga`](https://scriptex.js.org/localga/)
 4. [`weather-app`](https://scriptex.js.org/weather-app/)
+5. [`2048`](https://scriptex.js.org/2048/)
