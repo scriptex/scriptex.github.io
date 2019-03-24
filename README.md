@@ -9,3 +9,4 @@ My Github Pages hosted website with custom `js.org` domain name.
 3. [`localga`](https://scriptex.js.org/localga/)
 4. [`weather-app`](https://scriptex.js.org/weather-app/)
 5. [`2048`](https://scriptex.js.org/2048/)
+6. [`touchsweep`](https://scriptex.js.org/touchsweep)
