@@ -11,4 +11,9 @@ My Github Pages hosted website with custom `js.org` domain name.
 5. [`2048`](https://scriptex.js.org/2048/)
 6. [`touchsweep`](https://scriptex.js.org/touchsweep)
 7. [`react-svg-donuts`](https://scriptex.js.org/react-svg-donuts/)
-8. [`webpack-mpa-ts`](https://scriptex.js.org/webpack-mpa-ts/)
+8. [`webpack-mpa-ts`](https://scriptex.js.org/webpack-mpa-ts/) 
+
+## TODO
+
+1. Fix theme in `webpack-mpa-ts`
+2. Add the rest of the relevant pages
