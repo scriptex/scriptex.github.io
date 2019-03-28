@@ -16,5 +16,4 @@ My Github Pages hosted website with custom `js.org` domain name.
 
 ## TODO
 
-1. Fix theme in `webpack-mpa-ts`
-2. Add the rest of the relevant pages
+1. Add the rest of the relevant pages
