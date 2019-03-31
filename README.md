@@ -11,6 +11,7 @@ My Github Pages hosted website with custom `js.org` domain name.
 - [`react-accordion-ts`](https://scriptex.js.org/react-accordion-ts/)
 - [`react-svg-donuts`](https://scriptex.js.org/react-svg-donuts/)
 - [`touchsweep`](https://scriptex.js.org/touchsweep)
+- [`typed-usa-states`](https://github.com/scriptex/typed-usa-states)
 - [`weather-app`](https://scriptex.js.org/weather-app/)
 - [`webpack-mpa`](https://scriptex.js.org/webpack-mpa/)
 - [`webpack-mpa-next`](https://scriptex.js.org/webpack-mpa-next/)
