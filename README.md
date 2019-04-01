@@ -19,4 +19,4 @@ My Github Pages hosted website with custom `js.org` domain name.
 
 ## TODO
 
-1. Add the rest of the relevant pages
+Add the rest of the relevant pages
