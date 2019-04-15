@@ -20,3 +20,7 @@ My Github Pages hosted website with custom `js.org` domain name.
 ## TODO
 
 Add the rest of the relevant pages
+
+## LICENSE
+
+MIT
