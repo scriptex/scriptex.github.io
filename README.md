@@ -6,6 +6,7 @@ My Github Pages hosted website with custom `js.org` domain name.
 
 - [`2048`](https://scriptex.js.org/2048/)
 - [`AnimateMe`](https://scriptex.js.org/AnimateMe/)
+- [`calendar-widget`](https://github.com/scriptex/calendar-widget)
 - [`create-pwa`](https://scriptex.js.org/create-pwa/)
 - [`localga`](https://scriptex.js.org/localga/)
 - [`react-accordion-ts`](https://scriptex.js.org/react-accordion-ts/)
