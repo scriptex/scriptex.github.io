@@ -147,15 +147,7 @@ body {
 
 	/* prettier-ignore */
 	--html: (
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0; height: 0; visibility: hidden; position: absolute;" aria-hidden="true">
-        <symbol viewBox="${data.socials[0].viewBox}" id="${data.socials[0].id}">${data.socials[0].markup}</symbol>
-        <symbol viewBox="${data.socials[1].viewBox}" id="${data.socials[1].id}">${data.socials[1].markup}</symbol>
-        <symbol viewBox="${data.socials[2].viewBox}" id="${data.socials[2].id}">${data.socials[2].markup}</symbol>
-        <symbol viewBox="${data.socials[3].viewBox}" id="${data.socials[3].id}">${data.socials[3].markup}</symbol>
-        <symbol viewBox="${data.socials[4].viewBox}" id="${data.socials[4].id}">${data.socials[4].markup}</symbol>
-        <symbol viewBox="${data.socials[5].viewBox}" id="${data.socials[5].id}">${data.socials[5].markup}</symbol>
-        <symbol viewBox="${data.socials[6].viewBox}" id="${data.socials[6].id}">${data.socials[6].markup}</symbol>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0; height: 0; visibility: hidden; position: absolute;" aria-hidden="true"></svg>
     <h1>atanas atanasov (scriptex)</h1>
     <h2>senior <br />javascript / typescript<br />engineer</h2>
     <nav><ul></ul></nav>
@@ -163,45 +155,40 @@ body {
     <label for="menu">Projects</label>
     <div>
         <label for="menu">&times;</label>
-        <a href="${data.projects[0].href}">${data.projects[0].name}</a>
-        <a href="${data.projects[1].href}">${data.projects[1].name}</a>
-        <a href="${data.projects[2].href}">${data.projects[2].name}</a>
-        <a href="${data.projects[3].href}">${data.projects[3].name}</a>
-        <a href="${data.projects[4].href}">${data.projects[4].name}</a>
-        <a href="${data.projects[5].href}">${data.projects[5].name}</a>
-        <a href="${data.projects[6].href}">${data.projects[6].name}</a>
-        <a href="${data.projects[7].href}">${data.projects[7].name}</a>
-        <a href="${data.projects[8].href}">${data.projects[8].name}</a>
-        <a href="${data.projects[9].href}">${data.projects[9].name}</a>
-        <a href="${data.projects[10].href}">${data.projects[10].name}</a>
-        <a href="${data.projects[11].href}">${data.projects[11].name}</a>
-        <a href="${data.projects[12].href}">${data.projects[12].name}</a>
-        <a href="${data.projects[13].href}">${data.projects[13].name}</a>
-        <a href="${data.projects[14].href}">${data.projects[14].name}</a>
-        <a href="${data.projects[15].href}">${data.projects[15].name}</a>
-        <a href="${data.projects[16].href}">${data.projects[16].name}</a>
-        <a href="${data.projects[17].href}">${data.projects[17].name}</a>
-        <a href="${data.projects[18].href}">${data.projects[18].name}</a>
     </div>
     );
 
 	/* prettier-ignore */
 	--js: (
         const nav = document.querySelector('nav ul');
+        const sprite = document.querySelector('svg[aria-hidden="true"]');
 
-        data.socials.forEach((social) => {
+        data.socials.forEach(({ id, href, title, markup, viewBox }) => {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            const svg = `<svg class="${social.id}"><use xlink:href="#${social.id}"></use></svg>`;
+            const svg = `<svg class="${id}"><use xlink:href="#${id}"></use></svg>`;
+            const symbol = `<symbol viewBox="${viewBox}" id="${id}">${markup}</symbol>`;
 
-            a.href = social.href;
-            a.title = social.title;
+            a.href = href;
+            a.title = title;
             a.target = '_blank';
             a.rel = 'noopener noreferrer nofollow';
             a.innerHTML = svg;
 
             li.appendChild(a);
-            nav.appendChild(li)
+            nav.appendChild(li);
+            sprite.innerHTML = sprite.innerHTML + symbol;
+        });
+
+        const projects = document.querySelector('div');
+
+        data.projects.forEach(({ href, name }) => {
+            const a = document.createElement('a');
+
+            a.href = href;
+            a.innerHTML = name;
+
+            projects.appendChild(a);
         });
     )
 }
