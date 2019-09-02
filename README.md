@@ -11,6 +11,7 @@ My Github Pages hosted website with custom `js.org` domain name.
 - [`calendar-widget`](https://scriptex.js.org/calendar-widget)
 - [`create-pwa`](https://scriptex.js.org/create-pwa/)
 - [`localga`](https://scriptex.js.org/localga/)
+- [`material-tetris`](https://scriptex.js.org/material-tetris/)
 - [`optisize`](https://three11.github.io/optisize/) 
 - [`random-splice`](https://scriptex.js.org/random-splice)
 - [`react-accordion-ts`](https://scriptex.js.org/react-accordion-ts/)
