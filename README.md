@@ -1,8 +1,17 @@
 # [scriptex.js.org](https://scriptex.js.org)
 
-My Github Pages hosted website with custom `js.org` domain name.
+> My Github Pages hosted website with custom `js.org` domain name.
 
-## Pages:
+## About
+
+This is an attempt to show that anything is possible in the frontend web world.
+The codebase uses the `js-in-css` technique, which is pretty uncommon.
+It basically means that the functionality is embedded in the stylesheet.
+You can check [the stylesheet](https://github.com/scriptex/scriptex.github.io/blob/master/style.css) for more details on how I implemented it. 
+
+![Mind blowing gif](https://media2.giphy.com/media/Um3ljJl8jrnHy/200.gif)
+
+## Projects included:
 
 - [`2048`](https://scriptex.js.org/2048/)
 - [`AnimateMe`](https://scriptex.js.org/AnimateMe/)
@@ -25,7 +34,7 @@ My Github Pages hosted website with custom `js.org` domain name.
 - [`webpack-mpa-next`](https://scriptex.js.org/webpack-mpa-next/)
 - [`webpack-mpa-ts`](https://scriptex.js.org/webpack-mpa-ts/)
 
-## TODO
+## 🚧 TODO 🚧
 
 Add the rest of the relevant pages
 
