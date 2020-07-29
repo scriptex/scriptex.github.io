@@ -14,117 +14,117 @@ body {
 
 	/* prettier-ignore */
 	--data: (
-        projects: [
-            {
-                href: 'https://scriptex.js.org/2048/',
-                name: '2048'
-            },
-            {
-                href: 'https://scriptex.js.org/AnimateMe/',
-                name: 'AnimateMe'
-            },
-            {
-                href: 'https://scriptex.js.org/async-array-prototype',
-                name: 'async-array-prototype'
-            },
-            {
-                href: 'https://scriptex.js.org/at-the-wall',
-                name: 'at-the-wall'
-            },
-            {
-                href: 'https://scriptex.js.org/calendar-widget/',
-                name: 'calendar-widget'
-            },
-            {
-                href: 'https://scriptex.js.org/create-pwa/',
-                name: 'create-pwa'
-            },
-            {
-                href: 'https://scriptex.js.org/localga/',
-                name: 'localga'
-            },
-	    {
-                href: 'https://scriptex.js.org/material-tetris/',
-                name: 'material-tetris'
-            },
-            {
-                href: 'https://three11.github.io/optisize/',
-                name: 'optisize'
-            },
-            {
-                href: 'https://scriptex.js.org/random-splice/',
-                name: 'random-splice'
-            },
-            {
-                href: 'https://scriptex.js.org/react-accordion-ts/',
-                name: 'react-accordion-ts'
-            },
-            {
-                href: 'https://scriptex.js.org/react-svg-donuts/',
-                name: 'react-svg-donuts'
-            },
-            {
-                href: 'https://scriptex.js.org/scss-goodies',
-                name: 'scss-goodies'
-            },
-            {
-                href: 'https://scriptex.js.org/svg64',
-                name: 'svg64'
-            },
-            {
-                href: 'https://scriptex.js.org/touchsweep',
-                name: 'touchsweep'
-            },
-            {
-                href: 'https://scriptex.js.org/typed-usa-states',
-                name: 'typed-usa-states'
-            },
-            {
-                href: 'https://scriptex.js.org/weather-app/',
-                name: 'weather-app'
-            },
-            {
-                href: 'https://scriptex.js.org/webpack-mpa/',
-                name: 'webpack-mpa'
-            },
-            {
-                href: 'https://scriptex.js.org/webpack-mpa-next/',
-                name: 'webpack-mpa-next'
-            },
-            {
-                href: 'https://scriptex.js.org/webpack-mpa-ts/',
-                name: 'webpack-mpa-ts'
-            }
-        ]
-    );
+		projects: [
+			{
+				href: 'https://scriptex.js.org/2048/',
+				name: '2048'
+			},
+			{
+				href: 'https://scriptex.js.org/AnimateMe/',
+				name: 'AnimateMe'
+			},
+			{
+				href: 'https://scriptex.js.org/async-array-prototype',
+				name: 'async-array-prototype'
+			},
+			{
+				href: 'https://scriptex.js.org/at-the-wall',
+				name: 'at-the-wall'
+			},
+			{
+				href: 'https://scriptex.js.org/calendar-widget/',
+				name: 'calendar-widget'
+			},
+			{
+				href: 'https://scriptex.js.org/create-pwa/',
+				name: 'create-pwa'
+			},
+			{
+				href: 'https://scriptex.js.org/localga/',
+				name: 'localga'
+			},
+		{
+				href: 'https://scriptex.js.org/material-tetris/',
+				name: 'material-tetris'
+			},
+			{
+				href: 'https://three11.github.io/optisize/',
+				name: 'optisize'
+			},
+			{
+				href: 'https://scriptex.js.org/random-splice/',
+				name: 'random-splice'
+			},
+			{
+				href: 'https://scriptex.js.org/react-accordion-ts/',
+				name: 'react-accordion-ts'
+			},
+			{
+				href: 'https://scriptex.js.org/react-svg-donuts/',
+				name: 'react-svg-donuts'
+			},
+			{
+				href: 'https://scriptex.js.org/scss-goodies',
+				name: 'scss-goodies'
+			},
+			{
+				href: 'https://scriptex.js.org/svg64',
+				name: 'svg64'
+			},
+			{
+				href: 'https://scriptex.js.org/touchsweep',
+				name: 'touchsweep'
+			},
+			{
+				href: 'https://scriptex.js.org/typed-usa-states',
+				name: 'typed-usa-states'
+			},
+			{
+				href: 'https://scriptex.js.org/weather-app/',
+				name: 'weather-app'
+			},
+			{
+				href: 'https://scriptex.js.org/webpack-mpa/',
+				name: 'webpack-mpa'
+			},
+			{
+				href: 'https://scriptex.js.org/webpack-mpa-next/',
+				name: 'webpack-mpa-next'
+			},
+			{
+				href: 'https://scriptex.js.org/webpack-mpa-ts/',
+				name: 'webpack-mpa-ts'
+			}
+		]
+	);
 
 	/* prettier-ignore */
 	--html: (
-    <h1>atanas atanasov (scriptex)</h1>
+	<h1>atanas atanasov (scriptex)</h1>
 	<h2>senior <br />javascript / typescript<br />engineer</h2>
 	<social-links></social-links>
 	<input type="checkbox" id="menu" />
-    <label for="menu">Projects</label>
-    <div>
-        <label for="menu">&times;</label>
-    </div>
-    );
+	<label for="menu" aria-label="Open menu">Projects</label>
+	<div>
+		<label for="menu" aria-label="Close menu">&times;</label>
+	</div>
+	);
 
 	/* prettier-ignore */
 	--js: (
 		import('https://unpkg.com/scriptex-socials');
 
-        const projects = document.querySelector('div');
+		const projects = document.querySelector('div');
 
-        data.projects.forEach(({ href, name }) => {
-            const a = document.createElement('a');
+		data.projects.forEach(({ href, name }) => {
+			const a = document.createElement('a');
 
-            a.href = href;
-            a.innerHTML = name;
+			a.href = href;
+			a.innerHTML = name;
 
-            projects.appendChild(a);
-        });
-    )
+			projects.appendChild(a);
+		});
+	)
 }
 
 body,
