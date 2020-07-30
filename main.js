@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 // Credits: https://codepen.io/scottkellum/pen/WqwjLm
 (() => {
 	function getPureProperty(rule, propertyName) {
@@ -37,12 +39,7 @@
 					}
 
 					for (let n = 0; n < elements.length; n++) {
-						eval(
-							js.replace(
-								/this/g,
-								`document.querySelectorAll('${selector}')[${n}]`
-							)
-						);
+						eval(js.replace(/this/g, `document.querySelectorAll('${selector}')[${n}]`));
 					}
 				}
 			}
