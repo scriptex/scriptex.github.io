@@ -193,7 +193,7 @@
 		"tag": "link",
 		"rel": "icon",
 		"type": "image/png",
-		"href": "img/favicon-128.png",
+		"href": "img/favicon-128x128.png",
 		"sizes": "128x128"
 	},
 	{

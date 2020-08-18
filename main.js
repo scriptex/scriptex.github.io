@@ -3,8 +3,7 @@
 // Credits: https://codepen.io/scottkellum/pen/WqwjLm
 (() => {
 	function getPureProperty(rule, propertyName) {
-		const raw = rule.style.getPropertyValue(propertyName);
-		return raw.trim().slice(1, -1);
+		return rule.style.getPropertyValue(propertyName).trim().slice(1, -1);
 	}
 
 	function cjss(rules) {
@@ -13,13 +12,17 @@
 
 			if (ruleName === 'CSSImportRule') {
 				const importedRules = rule.styleSheet.cssRules;
+
 				cjss(importedRules);
-			} else if (ruleName === 'CSSStyleRule') {
+			}
+
+			if (ruleName === 'CSSStyleRule') {
 				const selector = rule.style.parentRule.selectorText;
 				const elements = document.querySelectorAll(selector);
 
-				let js = getPureProperty(rule, '--js');
-				let html = getPureProperty(rule, '--html');
+				const js = getPureProperty(rule, '--js');
+				const html = getPureProperty(rule, '--html');
+
 				let data = getPureProperty(rule, '--data');
 
 				if (data) {
@@ -35,6 +38,7 @@
 				if (js) {
 					if (selector === 'script') {
 						eval(js);
+
 						continue;
 					}
 
@@ -46,25 +50,17 @@
 		}
 	}
 
-	function initialize() {
-		for (let sheet of document.styleSheets) {
-			const rules = sheet.rules || sheet.cssRules;
+	import('https://www.googletagmanager.com/gtag/js?id=UA-83446952-2').then(() => {
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push('js', new Date());
+		window.dataLayer.push('config', 'UA-83446952-2');
+	});
 
-			if (!rules || !rules.length) continue;
+	for (let sheet of document.styleSheets) {
+		const rules = sheet.rules || sheet.cssRules;
 
-			cjss(rules);
-		}
+		if (!rules || !rules.length) continue;
+
+		cjss(rules);
 	}
-
-	initialize();
-
-	window.dataLayer = window.dataLayer || [];
-
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-
-	gtag('js', new Date());
-
-	gtag('config', 'UA-83446952-2');
 })();
