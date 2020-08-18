@@ -1,0 +1,205 @@
+[
+	{
+		"tag": "title",
+		"content": "Atanas Atanasov | Senior Javascript / TypeScript Engineer"
+	},
+	{
+		"tag": "meta",
+		"name": "description",
+		"content": "Atanas Atanasov - Senior Javascript / TypeScript / UI / UX Engineer"
+	},
+	{
+		"tag": "meta",
+		"name": "keywords",
+		"content": "Web Development, HTML Development, Website Development, JavaScript Development, JS, JavaScript, TypeScript Development, TS, TypeScript, Vue, Vue.js, VueJS, React, ReactJS, React Native, Nuxt, Single Page Apps, Single Page Application, CSS, CSS3, ES5, ES6, ES7, Website, Development"
+	},
+	{
+		"tag": "meta",
+		"name": "copyright",
+		"content": "Atanas Atanasov"
+	},
+	{
+		"tag": "meta",
+		"name": "language",
+		"content": "EN"
+	},
+	{
+		"tag": "meta",
+		"name": "robots",
+		"content": "index,follow"
+	},
+	{
+		"tag": "meta",
+		"name": "author",
+		"content": "Atanas Atanasov, hi@atanas.info"
+	},
+	{
+		"tag": "meta",
+		"name": "designer",
+		"content": "Atanas Atanasov"
+	},
+	{
+		"tag": "meta",
+		"name": "coverage",
+		"content": "Worldwide"
+	},
+	{
+		"tag": "meta",
+		"name": "distribution",
+		"content": "Worldwide"
+	},
+	{
+		"tag": "meta",
+		"name": "rating",
+		"content": "General"
+	},
+	{
+		"tag": "meta",
+		"name": "revisit-after",
+		"content": "7 days"
+	},
+	{
+		"tag": "meta",
+		"http-equiv": "Expires",
+		"content": "0"
+	},
+	{
+		"tag": "meta",
+		"http-equiv": "Pragma",
+		"content": "no-cache"
+	},
+	{
+		"tag": "meta",
+		"http-equiv": "Cache-Control",
+		"content": "no-cache"
+	},
+	{
+		"tag": "meta",
+		"name": "theme-color",
+		"content": "#ef4c23"
+	},
+	{
+		"tag": "meta",
+		"name": "application-name",
+		"content": "Atanas Atanasov"
+	},
+	{
+		"tag": "meta",
+		"name": "msapplication-TileColor",
+		"content": "#ef4c23"
+	},
+	{
+		"tag": "meta",
+		"name": "msapplication-TileImage",
+		"content": "img/mstile-144x144.png"
+	},
+	{
+		"tag": "meta",
+		"name": "msapplication-square70x70logo",
+		"content": "img/mstile-70x70.png"
+	},
+	{
+		"tag": "meta",
+		"name": "msapplication-square150x150logo",
+		"content": "img/mstile-150x150.png"
+	},
+	{
+		"tag": "meta",
+		"name": "msapplication-wide310x150logo",
+		"content": "img/mstile-310x150.png"
+	},
+	{
+		"tag": "meta",
+		"name": "msapplication-square310x310logo",
+		"content": "img/mstile-310x310.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "57x57",
+		"href": "img/apple-touch-icon-57x57.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "114x114",
+		"href": "img/apple-touch-icon-114x114.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "72x72",
+		"href": "img/apple-touch-icon-72x72.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "144x144",
+		"href": "img/apple-touch-icon-144x144.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "60x60",
+		"href": "img/apple-touch-icon-60x60.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "120x120",
+		"href": "img/apple-touch-icon-120x120.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "76x76",
+		"href": "img/apple-touch-icon-76x76.png"
+	},
+	{
+		"tag": "link",
+		"rel": "apple-touch-icon",
+		"sizes": "152x152",
+		"href": "img/apple-touch-icon-152x152.png"
+	},
+	{
+		"tag": "link",
+		"rel": "icon",
+		"type": "image/png",
+		"href": "img/favicon-196x196.png",
+		"sizes": "196x196"
+	},
+	{
+		"tag": "link",
+		"rel": "icon",
+		"type": "image/png",
+		"href": "img/favicon-96x96.png",
+		"sizes": "96x96"
+	},
+	{
+		"tag": "link",
+		"rel": "icon",
+		"type": "image/png",
+		"href": "img/favicon-32x32.png",
+		"sizes": "32x32"
+	},
+	{
+		"tag": "link",
+		"rel": "icon",
+		"type": "image/png",
+		"href": "img/favicon-16x16.png",
+		"sizes": "16x16"
+	},
+	{
+		"tag": "link",
+		"rel": "icon",
+		"type": "image/png",
+		"href": "img/favicon-128.png",
+		"sizes": "128x128"
+	},
+	{
+		"tag": "link",
+		"rel": "shortcut icon",
+		"type": "image/x-icon",
+		"href": "img/favicon.ico"
+	}
+]
