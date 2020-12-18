@@ -1,17 +1,4 @@
-html,
 body {
-	height: 100%;
-}
-
-html {
-	font-size: 1rem;
-}
-
-body {
-	font-family: monospace;
-	text-align: center;
-	margin: 0;
-
 	/* prettier-ignore */
 	--data: (
 		projects: [
@@ -43,7 +30,7 @@ body {
 				href: 'https://scriptex.js.org/localga/',
 				name: 'localga'
 			},
-		{
+			{
 				href: 'https://scriptex.js.org/material-tetris/',
 				name: 'material-tetris'
 			},
@@ -97,26 +84,87 @@ body {
 			}
 		]
 	);
-
 	/* prettier-ignore */
 	--html: (
+	<input type="checkbox" id="menu" hidden />
 	<html-head-component src="./meta.json" hidden></html-head-component>
-	<h1>atanas atanasov (scriptex)</h1>
-	<h2>senior <br />javascript / typescript<br />engineer</h2>
+	<div class="title">
+		<h1>atanas atanasov (scriptex)</h1>
+		<label for="menu" aria-label="Open menu">Projects</label>
+		<h2>senior <br />javascript / typescript<br />engineer</h2>
+	</div>
+	<div class="activity">
+		<h3>Activity</h3>
+		<codersrank-activity
+			labels
+			legend
+			tooltip
+			branding="false"
+			username="scriptex"
+		></codersrank-activity>
+	</div>
+	<div class="education">
+		<h3>Education</h3>
+		<codersrank-education
+			grid
+			branding="false"
+			username="scriptex"
+			education-section-title="Schools"
+			certificates-section-title="Certificates"
+		></codersrank-education>
+	</div>
+	<div class="portfolio">
+		<h3>Portfolio</h3>
+		<codersrank-portfolio
+			grid
+			branding="false"
+			username="scriptex"
+		></codersrank-portfolio>
+	</div>
+	<div class="skills">
+		<h3>Skills</h3>
+		<codersrank-skills-chart
+			labels
+			legend
+			tooltip
+			branding="false"
+			username="scriptex"
+		></codersrank-skills-chart>
+	</div>
+	<div class="summary">
+		<h3>Summary</h3>
+		<codersrank-summary
+			username="scriptex"
+		></codersrank-summary>
+	</div>
+	<div class="work">
+		<h3>Work</h3>
+		<codersrank-work-experience
+			grid
+			logos
+			branding="false"
+			username="scriptex"
+		></codersrank-work-experience>
+	</div>
+	<br>
 	<social-links></social-links>
-	<input type="checkbox" id="menu" />
-	<label for="menu" aria-label="Open menu">Projects</label>
-	<div>
+	<div class="projects-list">
 		<label for="menu" aria-label="Close menu">&times;</label>
 	</div>
+	<div class="backdrop"></div>
 	);
-
 	/* prettier-ignore */
 	--js: (
 		import('https://unpkg.com/scriptex-socials');
 		import('https://unpkg.com/html-head-component');
+		import('https://unpkg.com/@codersrank/activity/codersrank-activity.min.js');
+		import('https://unpkg.com/@codersrank/education/codersrank-education.min.js');
+		import('https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js');
+		import('https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js');
+		import('https://unpkg.com/@codersrank/summary/codersrank-summary.min.js');
+		import('https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js');
 
-		const projects = document.querySelector('div');
+		const projects = document.querySelector('.projects-list');
 
 		data.projects.forEach(({ href, name }) => {
 			const a = document.createElement('a');
@@ -129,120 +177,162 @@ body {
 	)
 }
 
-body,
-ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-line-pack: center;
-	align-content: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+:root {
+	--primary: #fff;
+	--secondary: #000;
 }
 
-h1,
-h2,
-nav {
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 100%;
-	flex: 0 0 100%;
-	margin: 1rem 0;
+@media (prefers-color-scheme: light) {
+	:root {
+		--primary: #000;
+		--secondary: #fff;
+	}
 }
 
-ul {
-	list-style: none outside none;
-	padding: 0;
+html {
+	font-size: 1rem;
+}
+
+body {
+	font-family: monospace;
+	color: var(--primary);
+	padding: 1rem;
+	max-width: 1280px;
+	margin: auto;
+	background-color: var(--secondary);
+}
+
+h3 {
+	text-align: center;
 	margin: 0 0 1rem;
 }
 
-li {
-	padding: 0 0.325rem;
+.title {
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
-a,
-svg {
-	display: block;
+.title h1 {
+	margin: 0;
+}
+
+.title h2 {
+	flex: 0 0 100%;
+	padding: 1rem 0;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	margin: 1rem 0 0;
+}
+
+.work,
+.skills,
+.summary,
+.activity,
+.education,
+.portfolio {
+	padding: 1rem 0;
+	border-bottom: 1px solid;
 }
 
 label {
-	font-size: 1.25rem;
-	line-height: 1.25;
-	text-transform: lowercase;
-	display: inline-block;
-	vertical-align: top;
-	padding: 0.5rem 1rem;
-	border: 1px solid;
-	border-radius: 0.25rem;
+	display: block;
+	padding: 0.5rem;
 	cursor: pointer;
 }
 
-input[type='checkbox'] {
-	display: none;
+label:hover {
+	color: var(--secondary);
+	background-color: var(--primary);
 }
 
-input[type='checkbox']:checked ~ div {
-	opacity: 1;
-	transform: translateX(0%);
+codersrank-portfolio,
+codersrank-education,
+codersrank-work-experience {
+	--grid-columns: 3;
 }
 
-div {
-	font-size: 1.25rem;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-start;
-	align-content: flex-start;
-	justify-content: center;
+@media (max-width: 1024px) {
+	codersrank-portfolio,
+	codersrank-education,
+	codersrank-work-experience {
+		--grid-columns: 2;
+	}
+}
+
+@media (max-width: 768px) {
+	codersrank-portfolio,
+	codersrank-education,
+	codersrank-work-experience {
+		--grid-columns: 1;
+	}
+}
+
+.projects {
+}
+
+.backdrop,
+.projects-list {
 	opacity: 0;
-	position: absolute;
+	visibility: hidden;
+	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 5;
+	transition: all 0.5s ease-in-out;
+}
+
+.projects-list {
+	width: 20rem;
+	height: 100%;
+	z-index: 100;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
-	background-color: #fff;
+	background-color: var(--secondary);
 	transform: translateX(-100%);
-	transition-property: opacity transform;
-	transition-duration: 0.4s;
-	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-	will-change: opacity transform;
 }
 
-div a {
+.projects-list a {
+	color: inherit;
 	text-decoration: none;
-	flex: 0 0 100%;
 	display: block;
-	margin: 0.75rem 0;
+	padding: 1rem;
+	border-top: 1px solid;
 }
 
-div label {
-	min-width: 2.5rem;
-	padding: 0.25rem;
-	border: 0;
-	position: absolute;
-	top: 0.25rem;
-	right: 0.25rem;
-	z-index: 5;
+.projects-list a:hover {
+	color: var(--secondary);
+	background-color: var(--primary);
 }
 
-label:hover {
-	color: #fff;
-	border-color: #000;
-	background-color: #000;
+.projects-list label {
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: auto;
 }
 
-social-links {
-	display: block;
-	flex: 0 0 100%;
-	padding-bottom: 1rem;
+.backdrop {
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	background-color: var(--primary);
+	pointer-events: none;
+	transition: opacity;
+}
+
+#menu:checked ~ .backdrop {
+	opacity: 0.7;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+#menu:checked ~ .projects-list {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
 }

@@ -1,6 +1,3 @@
-// @ts-nocheck
-
-// Credits: https://codepen.io/scottkellum/pen/WqwjLm
 (() => {
 	function getPureProperty(rule, propertyName) {
 		return rule.style.getPropertyValue(propertyName).trim().slice(1, -1);
@@ -43,18 +40,25 @@
 					}
 
 					for (let n = 0; n < elements.length; n++) {
-						eval(js.replace(/this/g, `document.querySelectorAll('${selector}')[${n}]`));
+						eval(
+							js.replace(
+								/this/g,
+								`document.querySelectorAll('${selector}')[${n}]`
+							)
+						);
 					}
 				}
 			}
 		}
 	}
 
-	import('https://www.googletagmanager.com/gtag/js?id=UA-83446952-2').then(() => {
-		window.dataLayer = window.dataLayer || [];
-		window.dataLayer.push('js', new Date());
-		window.dataLayer.push('config', 'UA-83446952-2');
-	});
+	import('https://www.googletagmanager.com/gtag/js?id=UA-83446952-2').then(
+		() => {
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push('js', new Date());
+			window.dataLayer.push('config', 'UA-83446952-2');
+		}
+	);
 
 	for (let sheet of document.styleSheets) {
 		const rules = sheet.rules || sheet.cssRules;
