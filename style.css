@@ -3,11 +3,11 @@ body {
 	--data: (
 		projects: [
 			{
-				href: 'https://scriptex.js.org/2048/',
+				href: 'https://scriptex.js.org/2048',
 				name: '2048'
 			},
 			{
-				href: 'https://scriptex.js.org/AnimateMe/',
+				href: 'https://scriptex.js.org/AnimateMe',
 				name: 'AnimateMe'
 			},
 			{
@@ -19,68 +19,120 @@ body {
 				name: 'at-the-wall'
 			},
 			{
-				href: 'https://scriptex.js.org/calendar-widget/',
+				href: 'https://scriptex.js.org/calendar-widget',
 				name: 'calendar-widget'
 			},
 			{
-				href: 'https://scriptex.js.org/create-pwa/',
+				href: 'https://scriptex.js.org/create-pwa',
 				name: 'create-pwa'
 			},
 			{
-				href: 'https://scriptex.js.org/localga/',
+				href: 'https://scriptex.js.org/github-pages-vuepress',
+				name: 'github-pages-vuepress'
+			},
+			{
+				href: 'https://scriptex.js.org/hilarious-css',
+				name: 'hilarious-css'
+			},
+			{
+				href: 'https://scriptex.js.org/html-head-component',
+				name: 'html-head-component'
+			},
+			{
+				href: 'https://scriptex.js.org/localga',
 				name: 'localga'
 			},
 			{
-				href: 'https://scriptex.js.org/material-tetris/',
+				href: 'https://scriptex.js.org/material-tetris',
 				name: 'material-tetris'
 			},
 			{
-				href: 'https://three11.github.io/optisize/',
-				name: 'optisize'
+				href: 'https://scriptex.js.org/no-html',
+				name: 'no-html'
 			},
 			{
-				href: 'https://scriptex.js.org/random-splice/',
+				href: 'https://scriptex.js.org/npm-maintainer',
+				name: 'npm-maintainer'
+			},
+			{
+				href: 'https://scriptex.js.org/random-splice',
 				name: 'random-splice'
 			},
 			{
-				href: 'https://scriptex.js.org/react-accordion-ts/',
+				href: 'https://scriptex.js.org/react-accordion-ts',
 				name: 'react-accordion-ts'
 			},
 			{
-				href: 'https://scriptex.js.org/react-svg-donuts/',
+				href: 'https://scriptex.js.org/react-dropper',
+				name: 'react-dropper'
+			},
+			{
+				href: 'https://scriptex.js.org/react-svg-donuts',
 				name: 'react-svg-donuts'
+			},
+			{
+				href: 'https://scriptex.js.org/scriptex',
+				name: 'scriptex'
+			},
+			{
+				href: 'https://scriptex.js.org/scriptex.github.io',
+				name: 'scriptex.github.io'
 			},
 			{
 				href: 'https://scriptex.js.org/scss-goodies',
 				name: 'scss-goodies'
 			},
 			{
+				href: 'https://scriptex.js.org/socials',
+				name: 'socials'
+			},
+			{
 				href: 'https://scriptex.js.org/svg64',
 				name: 'svg64'
+			},
+			{
+				href: 'https://scriptex.js.org/svgo-viewbox',
+				name: 'svgo-viewbox'
 			},
 			{
 				href: 'https://scriptex.js.org/touchsweep',
 				name: 'touchsweep'
 			},
 			{
+				href: 'https://scriptex.js.org/ts-helpers',
+				name: 'ts-helpers'
+			},
+			{
 				href: 'https://scriptex.js.org/typed-usa-states',
 				name: 'typed-usa-states'
 			},
 			{
-				href: 'https://scriptex.js.org/weather-app/',
+				href: 'https://scriptex.js.org/universal-github-client',
+				name: 'universal-github-client'
+			},
+			{
+				href: 'https://scriptex.js.org/url-shortener',
+				name: 'url-shortener'
+			},
+			{
+				href: 'https://scriptex.js.org/weather-app',
 				name: 'weather-app'
 			},
 			{
-				href: 'https://scriptex.js.org/webpack-mpa/',
+				href: 'https://scriptex.js.org/webpack-mpa',
 				name: 'webpack-mpa'
 			},
 			{
-				href: 'https://scriptex.js.org/webpack-mpa-next/',
+				href: 'https://scriptex.js.org/webpack-mpa-next',
 				name: 'webpack-mpa-next'
 			},
 			{
-				href: 'https://scriptex.js.org/webpack-mpa-ts/',
+				href: 'https://scriptex.js.org/webpack-mpa-ts',
 				name: 'webpack-mpa-ts'
+			},
+			{
+				href: 'https://scriptex.js.org/optisize',
+				name: 'optisize'
 			}
 		]
 	);
