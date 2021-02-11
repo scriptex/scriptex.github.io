@@ -201,5 +201,14 @@
 		"rel": "shortcut icon",
 		"type": "image/x-icon",
 		"href": "https://atanas.info/images/favicon/favicon.ico"
-	}
+	},
+{ "tag": "meta", "property": "og:url", "content": "https://scriptex.js.org" },
+	{ "tag": "meta", "property": "og:type", "content": "website" },
+	{ "tag": "meta", "property": "og:title", "content": "Atanas Atanasov | Senior Frontend Web Developer" },
+	{ "tag": "meta", "property": "og:image", "content": "https://atanas.info/images/temp/atanas.jpg" },
+	{
+		"tag": "meta",
+		"property": "og:description",
+		"content": "Single Page Applications: Vue, React, Angular, NodeJS, PHP. Frontend master: HTML, SVG, CSS, SCSS, PostCSS, JavaScript, TypeScript, etc."
+	},
 ]
