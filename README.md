@@ -17,6 +17,7 @@ You can check [the stylesheet](https://github.com/scriptex/scriptex.github.io/bl
 -   [AnimateMe](https://scriptex.js.org/AnimateMe)
 -   [async-array-prototype](https://scriptex.js.org/async-array-prototype)
 -   [at-the-wall](https://scriptex.js.org/at-the-wall)
+-   [atanas.info](https://scriptex.js.org/atanas.info)
 -   [awesome-useless-websites](https://scriptex.js.org/awesome-useless-websites)
 -   [calendar-widget](https://scriptex.js.org/calendar-widget)
 -   [create-pwa](https://scriptex.js.org/create-pwa)
