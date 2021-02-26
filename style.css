@@ -19,12 +19,28 @@ body {
 				name: 'at-the-wall'
 			},
 			{
+				href: 'https://scriptex.js.org/awesome-useless-websites',
+				name: 'awesome-useless-websites'
+			},
+			{
 				href: 'https://scriptex.js.org/calendar-widget',
 				name: 'calendar-widget'
 			},
 			{
 				href: 'https://scriptex.js.org/create-pwa',
 				name: 'create-pwa'
+			},
+			{
+				href: 'https://scriptex.js.org/css-diagnostics',
+				name: 'css-diagnostics'
+			},
+			{
+				href: 'https://scriptex.js.org/dator',
+				name: 'dator'
+			},
+			{
+				href: 'https://scriptex.js.org/deno-rest-api',
+				name: 'deno-rest-api'
 			},
 			{
 				href: 'https://scriptex.js.org/github-pages-vuepress',
@@ -35,12 +51,44 @@ body {
 				name: 'hilarious-css'
 			},
 			{
+				href: 'https://scriptex.js.org/html5-form-validator',
+				name: 'html5-form-validator'
+			},
+			{
 				href: 'https://scriptex.js.org/html-head-component',
 				name: 'html-head-component'
 			},
 			{
+				href: 'https://scriptex.js.org/initial-commit',
+				name: 'initial-commit'
+			},
+			{
+				href: 'https://scriptex.js.org/itcss',
+				name: 'itcss'
+			},
+			{
+				href: 'https://scriptex.js.org/itcss-emmet-snippets',
+				name: 'itcss-emmet-snippets'
+			},
+			{
+				href: 'https://scriptex.js.org/itscss',
+				name: 'itscss'
+			},
+			{
+				href: 'https://scriptex.js.org/IntroScroll',
+				name: 'IntroScroll'
+			},
+			{
 				href: 'https://scriptex.js.org/localga',
 				name: 'localga'
+			},
+			{
+				href: 'https://scriptex.js.org/log',
+				name: 'log'
+			},
+			{
+				href: 'https://scriptex.js.org/material-snake',
+				name: 'material-snake'
 			},
 			{
 				href: 'https://scriptex.js.org/material-tetris',
@@ -53,6 +101,10 @@ body {
 			{
 				href: 'https://scriptex.js.org/npm-maintainer',
 				name: 'npm-maintainer'
+			},
+			{
+				href: 'https://scriptex.js.org/pass-score',
+				name: 'pass-score'
 			},
 			{
 				href: 'https://scriptex.js.org/random-splice',
