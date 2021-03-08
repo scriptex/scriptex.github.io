@@ -52,14 +52,6 @@
 		}
 	}
 
-	import('https://www.googletagmanager.com/gtag/js?id=UA-83446952-2').then(
-		() => {
-			window.dataLayer = window.dataLayer || [];
-			window.dataLayer.push('js', new Date());
-			window.dataLayer.push('config', 'UA-83446952-2');
-		}
-	);
-
 	for (let sheet of document.styleSheets) {
 		const rules = sheet.rules || sheet.cssRules;
 

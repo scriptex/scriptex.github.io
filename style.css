@@ -199,10 +199,11 @@ body {
 	/* prettier-ignore */
 	--html: (
 	<input type="checkbox" id="menu" hidden />
-	<html-head-component src="./meta.json" hidden></html-head-component>
+	<html-head-component src="meta.json" hidden></html-head-component>
 	<div class="title">
-		<h1>atanas atanasov (scriptex)</h1>
+		<img src="https://atanas.info/images/svg/logo-fill.svg" />
 		<label for="menu" aria-label="Open menu">Projects</label>
+		<h1>atanas atanasov (scriptex)</h1>
 		<h2>senior <br />javascript / typescript<br />engineer</h2>
 	</div>
 	<div class="activity">
@@ -267,15 +268,6 @@ body {
 	);
 	/* prettier-ignore */
 	--js: (
-		import('https://unpkg.com/scriptex-socials');
-		import('https://unpkg.com/html-head-component');
-		import('https://unpkg.com/@codersrank/activity/codersrank-activity.min.js');
-		import('https://unpkg.com/@codersrank/education/codersrank-education.min.js');
-		import('https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js');
-		import('https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js');
-		import('https://unpkg.com/@codersrank/summary/codersrank-summary.min.js');
-		import('https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js');
-
 		const projects = document.querySelector('.projects-list');
 
 		data.projects.forEach(({ href, name }) => {
@@ -327,16 +319,27 @@ h3 {
 	justify-content: space-between;
 }
 
+.title img {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+}
+
+.title h1,
+.title h2 {
+	flex: 0 0 100%;
+}
+
 .title h1 {
-	margin: 0;
+	padding-top: 1rem;
+	border-top: 1px solid;
+	margin: 1rem 0 0;
 }
 
 .title h2 {
-	flex: 0 0 100%;
-	padding: 1rem 0;
+	padding-bottom: 1rem;
 	border-bottom: 1px solid;
-	border-top: 1px solid;
-	margin: 1rem 0 0;
+	margin: 0;
 }
 
 .work,
