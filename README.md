@@ -1,6 +1,6 @@
 # [scriptex.js.org](https://scriptex.js.org) 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/scriptex.github.iot/README.md)](https://github.com/scriptex/scriptex.github.io/)
+[![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/scriptex.github.io/README.md)](https://github.com/scriptex/scriptex.github.io/)
 
 > My Github Pages hosted website with custom `js.org` domain name.
 
