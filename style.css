@@ -106,6 +106,10 @@ body {
 				href: 'https://scriptex.js.org/npm-maintainer',
 				name: 'npm-maintainer'
 			},
+            {
+				href: 'https://scriptex.js.org/npm-stats',
+				name: 'npm-stats'
+			},
 			{
 				href: 'https://scriptex.js.org/pass-score',
 				name: 'pass-score'
