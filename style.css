@@ -67,6 +67,14 @@ body {
 				name: 'Github Pages VuePress'
 			},
 			{
+				href: 'https://scriptex.js.org/analytics-badge/',
+				name: 'Google Analytics Badge'
+			},
+			{
+				href: 'https://scriptex.js.org/ga-beacon/',
+				name: 'Google Analytics Beacon'
+			},
+			{
 				href: 'https://scriptex.js.org/hilarious-css/',
 				name: 'Hilarious CSS'
 			},
